@@ -7,3 +7,6 @@
 - ```npm install mongoose```
 - ```npm i dotenv```
 - ```npm i body-parser```
+
+Ejecuta todos los comandos. Para activar la web escribe:
+- ```nodemon express```
