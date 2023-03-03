@@ -6,3 +6,4 @@
 - ```npm i ejs```
 - ```npm install mongoose```
 - ```npm i dotenv```
+- ```npm i body-parser```
