@@ -46,7 +46,7 @@ router.get("/:id", async (req, res) =>{
         })
     }catch(error){
         console.error('Se ha producido un error', error);
-        res.render('detalle', {
+        res.render("detalle", {
             error: true,
             mensaje: "Animal no encontrado"
         })
@@ -98,13 +98,5 @@ router.put('/:id', async (req, res) => {
         })
     }
 })
-
-    // res.render("Pokemon", {
-    //     arrayPokemon: [
-    //         {id: "0010", nombre: "Caterpie", tipo: "Bicho", descripcion: "Es lamentable"},
-    //         {id: "0013", nombre: "Weedle", tipo: "Bicho", descripcion: "También es lamentable"},
-    //         {id: "0129", nombre: "Magikarp", tipo: "Agua", descripcion: "Que cosa más mala"}
-    //     ]
-    // })
 
 module.exports = router
