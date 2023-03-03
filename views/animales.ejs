@@ -14,7 +14,18 @@
                 </tr>
             </thead>
             <tbody>
-                
+                <% if (arrayAnimal.length > 0) { %>
+                    <% arrayAnimal.forEach( animal =>{ %>
+                        <tr>
+                            <th scope="row"><%= animal.id %></th>
+                            <td><%= animal.nombre %></td>
+                            <td><%= animal.comun %></td>
+                            <td><%= animal.descripcion%></td>
+                            <td><%= animal.tamano%></td>
+                            <td><a class="btn btn-warning btn-sm" href=aniamles/<%= animal._id %>>Editar/Eliminar</a></td>
+                        </tr>
+                    <% }); %>
+                <% } %>
             </tbody>
         </table>
     </div>

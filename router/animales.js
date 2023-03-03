@@ -12,7 +12,7 @@ router.get("/", async (req, res) =>{
     try{
         const arrayAnimalDB = await Animal.find();
         console.log(arrayAnimalDB);
-        res.render("animal", {
+        res.render("animales", {
             arrayAnimal: arrayAnimalDB
         })
     }catch(error){
@@ -27,7 +27,7 @@ router.post("/", async (req, res) =>{
     try{
         const animalDB = new Animal(body)
         await animalDB.save();
-        res.redirect('/animal')
+        res.redirect('/animales')
     }catch(error){
         console.error('error', error);
     }

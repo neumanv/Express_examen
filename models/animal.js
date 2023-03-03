@@ -11,5 +11,5 @@ const animalSchema = new Schema({
     tamano: String
 })
 
-const Animal = mongoose.model("Animal", animalSchema, "animal");
+const Animal = mongoose.model("Animal", animalSchema, "animales");
 module.exports = Animal;
