@@ -12,7 +12,7 @@ router.get("/", async (req, res) =>{
     try{
         const arrayAnimalDB = await Animal.find();
         console.log(arrayAnimalDB);
-        res.render("pokemon", {
+        res.render("animal", {
             arrayAnimal: arrayAnimalDB
         })
     }catch(error){
