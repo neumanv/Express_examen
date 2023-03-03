@@ -12,7 +12,7 @@ require("dotenv").config();
 let port = process.env.PORT || 3000;
 
 //URL de conexión
-const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.fjkm0cz.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.fjkm0cz.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
 
 app.use(express.static(__dirname + "/public/"));
 
